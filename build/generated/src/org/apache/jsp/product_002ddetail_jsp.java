@@ -1,0 +1,276 @@
+package org.apache.jsp;
+
+import javax.servlet.*;
+import javax.servlet.http.*;
+import javax.servlet.jsp.*;
+
+public final class product_002ddetail_jsp extends org.apache.jasper.runtime.HttpJspBase
+    implements org.apache.jasper.runtime.JspSourceDependent {
+
+  private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
+
+  private static java.util.List<String> _jspx_dependants;
+
+  private org.glassfish.jsp.api.ResourceInjector _jspx_resourceInjector;
+
+  public java.util.List<String> getDependants() {
+    return _jspx_dependants;
+  }
+
+  public void _jspService(HttpServletRequest request, HttpServletResponse response)
+        throws java.io.IOException, ServletException {
+
+    PageContext pageContext = null;
+    HttpSession session = null;
+    ServletContext application = null;
+    ServletConfig config = null;
+    JspWriter out = null;
+    Object page = this;
+    JspWriter _jspx_out = null;
+    PageContext _jspx_page_context = null;
+
+    try {
+      response.setContentType("text/html");
+      pageContext = _jspxFactory.getPageContext(this, request, response,
+      			null, true, 8192, true);
+      _jspx_page_context = pageContext;
+      application = pageContext.getServletContext();
+      config = pageContext.getServletConfig();
+      session = pageContext.getSession();
+      out = pageContext.getOut();
+      _jspx_out = out;
+      _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
+
+      out.write("<div class=\"box-content\">\n");
+      out.write("    <form method=\"post\" class=\"form form-horizontal\" enctype=\"multipart/form-data\" style=\"margin-bottom: 0;\">\n");
+      out.write("        <div class=\"row form-group score-match\">\n");
+      out.write("            <div class=\"col-sm-6 text-right team\">\n");
+      out.write("                <span>Hoàng Nha</span>\n");
+      out.write("                <img src=\"https://cdn.ketnoibongda.vn/upload/images/team/team-default.jpg\" width=\"60\" height=\"60\"> \n");
+      out.write("                <input style=\"float:right; margin-left: 5px\" value=\"\" type=\"number\" name=\"score_home\">\n");
+      out.write("            </div>\n");
+      out.write("            <div class=\"col-sm-6 team\">\n");
+      out.write("                <input style=\"float:left; margin-right: 5px\" value=\"\" type=\"number\" name=\"score_away\">\n");
+      out.write("                <img src=\"https://cdn.ketnoibongda.vn/upload/images/team/team-default.jpg\" width=\"60\" height=\"60\"> \n");
+      out.write("                <span>dsadasdas</span>\n");
+      out.write("            </div>\n");
+      out.write("        </div>   \n");
+      out.write("        <div class=\"row form-group score-match\">\n");
+      out.write("            <div class=\"col-csm-12 text-center text-danger label-text\"> Penalty</div>\n");
+      out.write("            <div class=\"col-sm-6 text-right team\">                                    \n");
+      out.write("                <input style=\"float:right; margin-left: 5px\" value=\"\" type=\"number\" name=\"penhome\">\n");
+      out.write("            </div>\n");
+      out.write("            <div class=\"col-sm-6 text-left team\">                                     \n");
+      out.write("                <input style=\"float:left; margin-left: 5px\" value=\"\" type=\"number\" name=\"penaway\">\n");
+      out.write("            </div>\n");
+      out.write("        </div>\n");
+      out.write("        <div class=\"form-group\">\n");
+      out.write("            <div class=\"col-csm-12 text-center text-danger label-text\"> Ghi bàn</div>\n");
+      out.write("            <div id=\"field\" class=\"col-sm-6\">\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("                <div class=\"entry row\">\n");
+      out.write("                    <div class=\"col-sm-5\">\n");
+      out.write("                        <select class=\"form-control col-sm-9\" name=\"goal-home[]\">\n");
+      out.write("                            <option value=\"\">Ch?n c?u th?</option>\n");
+      out.write("                        </select>    \n");
+      out.write("                    </div>\n");
+      out.write("                    <div class=\"col-sm-3\">\n");
+      out.write("                        <input class=\"form-control col-sm-3\" name=\"time-goal-home[]\" type=\"text\" placeholder=\"Th?i gian\">\n");
+      out.write("                    </div>\n");
+      out.write("                    <div class=\"col-sm-2 text-center box-og\">\n");
+      out.write("                        <div class=\"toggle btn btn-danger off btn-xs ios\" data-toggle=\"toggle\" style=\"width: 71px; height: 22px;\">\n");
+      out.write("                            <input class=\"og\" type=\"checkbox\" data-toggle=\"toggle\" data-onstyle=\"success\" data-on=\"Ph?n l??i\" data-off=\"Không\" \n");
+      out.write("                                   data-offstyle=\"danger\" data-size=\"mini\" data-style=\"ios\" data-og=\"0\" data-class=\"home\" name=\"og-home-0\">\n");
+      out.write("                            <div class=\"toggle-group\"><label class=\"btn btn-success btn-xs toggle-on\">Ph?n l??i</label><label class=\"btn btn-danger btn-xs active toggle-off\">Không</label>\n");
+      out.write("                                <span class=\"toggle-handle btn btn-default btn-xs\"></span>\n");
+      out.write("                            </div></div>\n");
+      out.write("                        <input type=\"hidden\" name=\"value-og-home[]\" class=\"og-home-0\"> \n");
+      out.write("                    </div>\n");
+      out.write("                    <div class=\"col-sm-2 text-right\">\n");
+      out.write("                        <span class=\"input-group-btn\">\n");
+      out.write("                            <button class=\"btn btn-success btn-add\" type=\"button\">\n");
+      out.write("                                <span class=\"glyphicon glyphicon-plus\"></span>\n");
+      out.write("                            </button>\n");
+      out.write("                        </span>\n");
+      out.write("                    </div>\n");
+      out.write("                </div>\n");
+      out.write("            </div>\n");
+      out.write("\n");
+      out.write("            <div id=\"field_2\" class=\"col-sm-6\">\n");
+      out.write("                <div class=\"entry row\">\n");
+      out.write("                    <div class=\"col-sm-2 text-left\">\n");
+      out.write("                        <span class=\"input-group-btn\">\n");
+      out.write("                            <button class=\"btn btn-success btn-add_2\" type=\"button\">\n");
+      out.write("                                <span class=\"glyphicon glyphicon-plus\"></span>\n");
+      out.write("                            </button>\n");
+      out.write("                        </span>\n");
+      out.write("                    </div>\n");
+      out.write("                    <div class=\"col-sm-2 text-center box-og\">\n");
+      out.write("                        <div class=\"toggle btn btn-danger off btn-xs ios\" data-toggle=\"toggle\" style=\"width: 71px; height: 22px;\">\n");
+      out.write("                            <input class=\"og\" type=\"checkbox\" data-toggle=\"toggle\" data-onstyle=\"success\" data-on=\"Ph?n l??i\" data-off=\"Không\" data-offstyle=\"danger\" \n");
+      out.write("                                   data-size=\"mini\" data-style=\"ios\" data-og=\"0\" data-class=\"away\" name=\"og-away[0]\"><div class=\"toggle-group\">\n");
+      out.write("                                <label class=\"btn btn-success btn-xs toggle-on\">Ph?n l??i</label><label class=\"btn btn-danger btn-xs active toggle-off\">Không</label>\n");
+      out.write("                                <span class=\"toggle-handle btn btn-default btn-xs\"></span></div></div>\n");
+      out.write("                        <input type=\"hidden\" name=\"value-og-away[]\" class=\"og-away-0\">\n");
+      out.write("                    </div>\n");
+      out.write("                    <div class=\"col-sm-3\">\n");
+      out.write("                        <input class=\"form-control col-sm-3\" name=\"time-goal-away[]\" type=\"text\" placeholder=\"Th?i gian\">\n");
+      out.write("                    </div>                                        \n");
+      out.write("                    <div class=\"col-sm-5\">\n");
+      out.write("                        <select class=\"form-control col-sm-9\" name=\"goal-away[]\">\n");
+      out.write("                            <option value=\"\">Ch?n c?u th?</option>\n");
+      out.write("                        </select>    \n");
+      out.write("                    </div>\n");
+      out.write("\n");
+      out.write("                </div>\n");
+      out.write("\n");
+      out.write("            </div>\n");
+      out.write("        </div>\n");
+      out.write("\n");
+      out.write("        <div class=\"form-group\">\n");
+      out.write("            <div class=\"col-csm-12 text-center text-danger label-text\"> Th? vàng</div>\n");
+      out.write("            <div id=\"field_3\" class=\"col-sm-6\">\n");
+      out.write("\n");
+      out.write("                <div class=\"entry row\">\n");
+      out.write("                    <div class=\"col-sm-6\">\n");
+      out.write("                        <select class=\"form-control col-sm-9\" name=\"yellow-card[]\">\n");
+      out.write("                            <option value=\"\">Ch?n c?u th?</option>\n");
+      out.write("                        </select>    \n");
+      out.write("                    </div>\n");
+      out.write("                    <div class=\"col-sm-4\">\n");
+      out.write("                        <input class=\"form-control col-sm-3\" name=\"time-yellow[]\" type=\"text\" placeholder=\"Th?i gian\">\n");
+      out.write("                    </div>\n");
+      out.write("                    <div class=\"col-sm-2 text-right\">\n");
+      out.write("                        <span class=\"input-group-btn\">\n");
+      out.write("                            <button class=\"btn btn-success btn-add_3\" type=\"button\">\n");
+      out.write("                                <span class=\"glyphicon glyphicon-plus\"></span>\n");
+      out.write("                            </button>\n");
+      out.write("                        </span>\n");
+      out.write("                    </div>\n");
+      out.write("                </div>\n");
+      out.write("\n");
+      out.write("            </div>\n");
+      out.write("\n");
+      out.write("            <div id=\"field_4\" class=\"col-sm-6\">\n");
+      out.write("                <div class=\"entry row\">\n");
+      out.write("                    <div class=\"col-sm-2 text-left\">\n");
+      out.write("                        <span class=\"input-group-btn\">\n");
+      out.write("                            <button class=\"btn btn-success btn-add_4\" type=\"button\">\n");
+      out.write("                                <span class=\"glyphicon glyphicon-plus\"></span>\n");
+      out.write("                            </button>\n");
+      out.write("                        </span>\n");
+      out.write("                    </div>\n");
+      out.write("                    <div class=\"col-sm-4\">\n");
+      out.write("                        <input class=\"form-control col-sm-3\" name=\"time-yellow[]\" type=\"text\" placeholder=\"Th?i gian\">\n");
+      out.write("                    </div>                                        \n");
+      out.write("                    <div class=\"col-sm-6\">\n");
+      out.write("                        <select class=\"form-control col-sm-9\" name=\"yellow-card[]\">\n");
+      out.write("                            <option value=\"\">Ch?n c?u th?</option>\n");
+      out.write("                        </select>    \n");
+      out.write("                    </div>\n");
+      out.write("\n");
+      out.write("                </div>\n");
+      out.write("\n");
+      out.write("            </div>\n");
+      out.write("        </div>\n");
+      out.write("\n");
+      out.write("        <div class=\"form-group\">\n");
+      out.write("            <div class=\"col-csm-12 text-center text-danger label-text\"> Th? ??</div>\n");
+      out.write("            <div id=\"field_5\" class=\"col-sm-6\">\n");
+      out.write("\n");
+      out.write("                <div class=\"entry row\">\n");
+      out.write("                    <div class=\"col-sm-5\">\n");
+      out.write("                        <select class=\"form-control col-sm-9\" name=\"red-card-home[]\">\n");
+      out.write("                            <option value=\"\">Ch?n c?u th?</option>\n");
+      out.write("                        </select>    \n");
+      out.write("                    </div>\n");
+      out.write("                    <div class=\"col-sm-3\">\n");
+      out.write("                        <input class=\"form-control col-sm-3\" name=\"time-red-home[]\" type=\"text\" placeholder=\"Th?i gian\">\n");
+      out.write("                    </div>\n");
+      out.write("                    <div class=\"col-sm-2 text-center box-og\">\n");
+      out.write("                        <div class=\"toggle btn btn-danger off btn-xs ios\" data-toggle=\"toggle\" style=\"width: 66px; height: 22px;\"><input class=\"og-card\" type=\"checkbox\" data-toggle=\"toggle\" data-onstyle=\"success\" data-on=\"Gián ti?p\" data-off=\"Không\" data-offstyle=\"danger\" data-size=\"mini\" data-style=\"ios\" data-og=\"0\" data-class=\"home\"><div class=\"toggle-group\"><label class=\"btn btn-success btn-xs toggle-on\">Gián ti?p</label><label class=\"btn btn-danger btn-xs active toggle-off\">Không</label><span class=\"toggle-handle btn btn-default btn-xs\"></span></div></div>\n");
+      out.write("                        <input type=\"hidden\" name=\"og-card-home[]\" class=\"og-card-home-0\">\n");
+      out.write("\n");
+      out.write("                    </div>\n");
+      out.write("                    <div class=\"col-sm-2 text-right\">\n");
+      out.write("                        <span class=\"input-group-btn\">\n");
+      out.write("                            <button class=\"btn btn-success btn-add_5\" type=\"button\">\n");
+      out.write("                                <span class=\"glyphicon glyphicon-plus\"></span>\n");
+      out.write("                            </button>\n");
+      out.write("                        </span>\n");
+      out.write("                    </div>\n");
+      out.write("                </div>\n");
+      out.write("\n");
+      out.write("            </div>\n");
+      out.write("\n");
+      out.write("            <div id=\"field_6\" class=\"col-sm-6\">\n");
+      out.write("\n");
+      out.write("                <div class=\"entry row\">\n");
+      out.write("                    <div class=\"col-sm-2 text-left\">\n");
+      out.write("                        <span class=\"input-group-btn\">\n");
+      out.write("                            <button class=\"btn btn-success btn-add_6\" type=\"button\">\n");
+      out.write("                                <span class=\"glyphicon glyphicon-plus\"></span>\n");
+      out.write("                            </button>\n");
+      out.write("                        </span>\n");
+      out.write("                    </div>\n");
+      out.write("                    <div class=\"col-sm-2 text-center box-og\">\n");
+      out.write("                        <div class=\"toggle btn btn-danger off btn-xs ios\" data-toggle=\"toggle\" style=\"width: 66px; height: 22px;\">\n");
+      out.write("                            <input class=\"og-card\" type=\"checkbox\" data-toggle=\"toggle\" data-onstyle=\"success\" data-on=\"Gián ti?p\" data-off=\"Không\"\n");
+      out.write("                                   data-offstyle=\"danger\" data-size=\"mini\" data-style=\"ios\" data-og=\"0\" data-class=\"away\"><div class=\"toggle-group\">\n");
+      out.write("                                <label class=\"btn btn-success btn-xs toggle-on\">Gián ti?p</label><label class=\"btn btn-danger btn-xs active toggle-off\">Không</label>\n");
+      out.write("                                <span class=\"toggle-handle btn btn-default btn-xs\"></span></div></div>\n");
+      out.write("                        <input type=\"hidden\" name=\"og-card-away[]\" class=\"og-card-away-0\">\n");
+      out.write("\n");
+      out.write("                    </div>\n");
+      out.write("                    <div class=\"col-sm-3\">\n");
+      out.write("                        <input class=\"form-control col-sm-3\" name=\"time-red-away[]\" type=\"text\" placeholder=\"Th?i gian\">\n");
+      out.write("                    </div>                                        \n");
+      out.write("                    <div class=\"col-sm-5\">\n");
+      out.write("                        <select class=\"form-control col-sm-9\" name=\"red-card-away[]\">\n");
+      out.write("                            <option value=\"\">Ch?n c?u th?</option>\n");
+      out.write("                        </select>    \n");
+      out.write("                    </div>\n");
+      out.write("\n");
+      out.write("                </div>\n");
+      out.write("            </div>\n");
+      out.write("        </div>\n");
+      out.write("\n");
+      out.write("        <div class=\"row form-group hide\">                                 \n");
+      out.write("            <div class=\"col-csm-12 text-center text-danger label-text\"> Tr? ?i?m</div>\n");
+      out.write("            <div class=\"col-sm-6 text-right team\">                                    \n");
+      out.write("                <input class=\"form-control text-right\" style=\"float:right; margin-left: 5px\" value=\"0\" type=\"number\" name=\"pointhome\" placeholder=\"?i?m b? tr?\">\n");
+      out.write("            </div>\n");
+      out.write("            <div class=\"col-sm-6 text-left team\">                                     \n");
+      out.write("                <input class=\"form-control\" style=\"float:left; margin-left: 5px\" value=\"0\" type=\"number\" name=\"pointaway\" placeholder=\"?i?m b? tr?\">\n");
+      out.write("            </div>\n");
+      out.write("        </div>\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("        <div class=\"form-actions\" style=\"margin-bottom:0\">\n");
+      out.write("            <div class=\"row\">\n");
+      out.write("                <div class=\"col-sm-9 col-sm-offset-3\">\n");
+      out.write("                    <button class=\"btn btn-primary\" name=\"send\" type=\"submit\">\n");
+      out.write("                        <i class=\"icon-save\"></i>\n");
+      out.write("                        SAVE\n");
+      out.write("                    </button>\n");
+      out.write("\n");
+      out.write("                </div>\n");
+      out.write("            </div>\n");
+      out.write("        </div>\n");
+      out.write("    </form>\n");
+      out.write("</div>F");
+    } catch (Throwable t) {
+      if (!(t instanceof SkipPageException)){
+        out = _jspx_out;
+        if (out != null && out.getBufferSize() != 0)
+          out.clearBuffer();
+        if (_jspx_page_context != null) _jspx_page_context.handlePageException(t);
+        else throw new ServletException(t);
+      }
+    } finally {
+      _jspxFactory.releasePageContext(_jspx_page_context);
+    }
+  }
+}
